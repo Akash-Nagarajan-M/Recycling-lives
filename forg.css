@@ -1,0 +1,114 @@
+body{
+    background-image: url("loginbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+
+}
+header{
+    display: block;
+    position: relative;
+    width:fit-content;
+    height:50px;
+    margin-top: 100px;
+    left:33%;
+    font-size:200%;
+    font-weight: bold;
+    text-shadow:1px 1px red;
+    margin-right: 5px;
+}
+.container{
+    display: block;
+    position: relative;
+    top:80px;
+    left:33%;
+    border-radius: 20px;
+    border:3px solid black;
+    color:red;
+    text-shadow:0.7px 0.7px blue;
+    width:500px;
+    height:400px;
+    font-size: 200%;
+    background-color:#f0f2f5;
+}
+form{
+    position: relative;
+    top:5%;
+    left:5%;
+}
+
+input[type="email"],[type='text']{
+    width:90%;
+    height:30px;
+    margin-bottom:20px;
+    font-size:90%;
+    padding:2px 2px 2px 2px;
+    
+}
+input[type="submit"]{
+    position:relative;
+    left:18%;
+    margin-top:10px;
+    width:51%;
+    text-shadow:1px 1px red;
+    border:2px solid black;
+    border-radius: 19px;
+    font-size:90%;
+}
+a{
+    display:block;
+    position: relative;
+    width:250px;
+    color:black;
+    text-shadow:1px 1px red;
+    left:18%;
+    border-radius: 19px;
+    margin-top:10px;
+    text-decoration: none;
+    background-color:rgb(228, 222, 222);
+    text-align:center;
+    border:2px solid black;
+
+}
+h2{
+    position: relative;
+    margin:0;
+    font-size:2em;
+    font-weight: 900;
+    color:#fff;
+    z-index:1;
+    overflow:hidden;
+    background: black;
+}
+h2::before{
+    content:'';
+    position: absolute;
+    left:110%;
+    width:120%;
+    height:100%;
+    background: linear-gradient(90deg,transparent 0%,#000 5%,#000 100%);
+    animation:animate 5.5s linear forwards infinite;
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%{
+        left:110%
+    }
+    100%{
+        left:0%;
+    }
+}
+h2 span{
+    color:#ff022c;
+}
+video{
+    position: absolute;
+    top:20px;
+    left:0;
+    right:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;   
+}

@@ -1,0 +1,106 @@
+body{
+    
+    background-image: url("loginbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+}
+header{
+    position: relative;
+    width: 41.5%;
+    top:35px;
+    left:30%;
+    text-align:center;
+    height:50px;
+    text-shadow:1px 1px red;
+    animation: first_text_anim 2s 1;
+    font-size: 120%;
+}
+form{
+    font-size: 140%;
+    display: block;
+    margin-left: 50px;
+    margin-top: 40px;
+    width: fit-content;
+}
+#foot{
+    position: absolute;
+    top:800px;
+}
+@keyframes first_text_anim {
+    0% {
+        color: black;
+        margin-bottom: -20px;
+    }
+    30% {
+        letter-spacing: 15px;
+        margin-bottom: -20px;
+    }
+    60%{
+        letter-spacing: 11px;
+        margin-bottom: -20px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+.a{
+    width:37%;
+    height: 550px;
+    border-radius: 5px;
+    border:2px solid navy;
+    text-shadow:.3px .3px red;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    left:31%;
+    padding:10px;
+}
+input[type="text"]{
+    width:90%;
+    height:30px;
+    font-size: 100%;
+}
+.right{
+    float: right;
+    position: relative;
+    right:7%;
+}
+input[type="number"]{
+    height:25px;
+    font-size: 90%;
+    width: 150px;
+    margin-right: 7px;
+}
+#city1{
+    width: 150px;
+    height:25px;
+    font-size: 90%;
+}
+.down{
+    display: block;
+    position: relative;
+    left:20%;
+    width:fit-content;
+    height: 30px;
+    background-color: white;   
+    text-align: center;
+}
+a{
+    color:red;
+}
+#a41{
+    height:100px;
+    width:505px;
+    padding: 0px;
+    margin:0px;
+    padding-left: 2px;
+    font-size: 115%;
+}
+input[type='submit']{
+    width: fit-content;
+    position: relative;
+    left:35%;
+    font-size: x-large;
+}

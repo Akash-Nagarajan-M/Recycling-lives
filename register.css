@@ -1,0 +1,102 @@
+body{
+    font-size: 120%;
+    background-image: url("loginbg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;   
+}
+#logo{
+    position: absolute;
+    width:200px;
+    height:150px;
+    margin-left: 10px;
+}
+header{
+    position:relative;
+    width: 41.5%;
+    left:30%;
+    text-align:center;
+    height:50px;
+    text-shadow: 1px 1px red;
+    animation: first_text_anim 2s 1;
+}
+form{
+    font-size: larger;
+    display: block;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+@keyframes first_text_anim {
+    0% {
+        color: black;
+        margin-bottom: -20px;
+    }
+    30% {
+        letter-spacing: 18px;
+        margin-bottom: -20px;
+    }
+    60%{
+        letter-spacing: 15px;
+        margin-bottom: -20px;
+    }
+    85% {
+        letter-spacing: 12px;
+        margin-bottom: -20px;
+    }
+}
+.a{
+    width:40%;
+    height: 621px;
+    border-radius: 5px;
+    border:2px solid navy;
+    background-color:#f0f2f5;
+    text-shadow:.7px .7px red;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    left:30%;
+    padding:10px;
+}
+input[type="text"],[type="email"]{
+    width:90%;
+    height:30px;
+    font-size: 120%;
+}
+.right{
+    float: right;
+    position: relative;
+    right:7%;
+}
+#city1{
+    width: 150px;
+    font-size: 90%;
+}
+input[type="number"]{
+    font-size: 90%;
+    margin-right: 7px;
+    width:110px;
+}
+.down{
+    display: block;
+    position: relative;
+    left:20%;
+    width:fit-content;
+    height: 30px;
+    background-color: white;   
+    text-align: center;
+}
+a{
+    color:red;
+}
+#a4{
+    height: 100px;
+    width:500px;
+    padding: 0px;  
+    font-size: 110%; 
+}
+input[type='submit']{
+    width: fit-content;
+    position: relative;
+    left:35%;
+    font-size: x-large;
+}

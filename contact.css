@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+.rcontent{
+    font-family: 'STIX Two Text',serif;
+    position: absolute;
+    top:100px;
+    letter-spacing: 1px;
+    left:50%;
+    width:fit-content;
+    font-size:160%;
+    font-weight: 479;
+    line-height: 32px;
+    height:fit-content;
+    background-color: rgba(255, 255, 255, 0.144);
+}
+iframe{
+    position: relative;
+    top:50px;
+    width:46%;
+    height:380px;
+    z-index: -1;
+    margin-left: 20px;
+}
+footer{
+    position: absolute;
+    top:750px;
+}

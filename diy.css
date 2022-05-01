@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+body{
+    background-image: url("loginbg1.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 900%;
+    font-family: 'Karla',cursive;
+    overflow-x: hidden;
+}
+.top{
+    width:100%;
+    height: 80px;
+    border:2px solid black;
+    background-color: darkgreen;
+}
+.drop ul{
+    padding:0 ;
+    right:2%;
+    background-color: black;
+    position: absolute;
+    list-style-type: none;
+    top:2%;
+    font-size: 120%;  
+}
+.drop ul li a{
+    display:block;
+    text-decoration: none;
+    width:200px;
+    animation:roll 3s infinite ease-in-out 0.5s;
+    color:white;
+    font-weight: bold;
+}
+@keyframes roll{
+    0%   { border:3px solid red;}
+    25%  { border:3px solid orange;}
+    50%  {border:3px solid yellow;}
+    75%  {border:3px solid green;}
+    100% {border:3px solid red;}
+}
+.drop ul li a:hover{
+    background-color: grey;
+}
+.drop ul li ul.dropdown{ 
+    display:none;
+}
+.drop ul li:hover ul.dropdown{
+    display:block;
+    position:relative;
+    right:0;
+}
+.drop ul li ul.dropdown li {
+   display: block;
+}
+#m1{
+    font-size: 120%;
+}
+#m1:hover{
+    background-color: black;
+}
+a{
+    text-align: center;
+}
+.ti{
+    position: relative;
+    width:fit-content;
+    height: fit-content;
+    left:38%;
+    top:20%;
+}
+
+#a1{
+    font-size: 290%;
+    color:white;
+    -webkit-text-stroke: .1vw rgb(236, 236, 236);
+    text-shadow: 1px 1px black;
+}
+
+#a1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    white-space: pre;
+   color:red;
+   -webkit-text-stroke: 0vw rgb(236, 236, 236);
+   border-right: 2px solid red;
+   overflow: hidden;
+    animation:animate 4s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width:0;
+    }
+    70%,80%{
+        width:100%;
+    }
+}
+.container {
+    display: inline-block;
+    position: absolute;
+    top:4.5%;
+    cursor: pointer;
+  }
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+.dropdown1{
+    display:none;
+    position: absolute;
+    top:0%;
+    left:0%;
+    font-size: 120%;
+    background-color: red;
+    
+}
+.dropdown1 li a{
+    text-decoration: none;  
+}
+.dropdown1 li{
+    list-style-type: none;
+}
+.change .dropdown1{
+    display:inline-block;
+    position: relative;
+    width:200px;
+    max-height:225px;
+    font-size:120%;
+    background-color:black;
+}
+#w1{
+    padding-left: 5px;
+}
+.change .dropdown1 li a{
+    color:red;
+    width:100%;
+    text-align: left;
+}
+.cont1{
+    position:absolute;
+    top:12%;
+    left:39%;
+    font-size: 150%;
+}
+.prod1,.prod2,.prod3{
+    position: relative;
+    top:200px;
+    left:5%;
+    height:605px;
+    width:90%;
+    padding: 3px 5px 0px 25px;
+    margin-bottom: 10px;
+}
+.prod1 img,.prod2 img,.prod3 img{
+    width:500px;
+    height: 500px;
+    padding: 5px 5px 5px 5px;
+    z-index: -1;
+}
+.left{
+    position: relative;
+    top:30px;
+}
+select{
+   width:115px;
+   height: 27px;
+   font-size: 120%;
+}
+.right .sub{
+    position: relative;
+    top:30px;
+    left:35%;
+    width:30%;
+    height:45px;
+    font-size: 220%;
+    background-color: chartreuse;
+}
+.right{
+    position: absolute;
+    top:0%;
+    left: 45%;
+    padding-left: 10px;
+    height:600px;
+    background-color: #f0f2f562;
+}
+.right h1{
+    font-weight:bolder;
+    font-size: 270%;
+}
+
+.right p{
+    font-size: 150%;
+}
+.right span{
+    font-size: 170%;
+    font-weight: bold;
+    line-height: 48px;
+}
+footer{
+    position: relative;
+    top:400px;
+    width:100%;
+    height:90px;
+    background-color:darkgreen;
+    font-size: 145%;
+  }
+  footer #left{
+    font-size: 145%;
+    float:left;
+    margin-left: 10px;
+    color:red;
+    text-shadow: 1px 1px black;
+  }
+  footer p{
+    float:right;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    color:red;
+    text-shadow: 1px 1px black;
+    font-weight: bolder;
+  }
+  footer p a{
+    color:pink;
+  }
